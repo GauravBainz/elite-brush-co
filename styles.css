@@ -36,11 +36,30 @@ html, body{
     background-image: linear-gradient(45deg, red, crimson);
     background-clip: text;
     -webkit-background-clip: text;
-    text-shadow: 0 0 10px red, 0 0 20px crimson;
-}
-
-.custom-heading:hover {
-    transform: scale(1.0);
     text-shadow: 0 0 20px red, 0 0 40px crimson, 0 0 60px crimson;
 
+}
+
+.quote-btn {
+    text-align: center;
+}
+
+.quote-btn button {
+    background: linear-gradient(45deg, red, crimson); /* Matches heading gradient */
+    color: white; /* Text color */
+    border: none; /* Removes border */
+    padding: 10px 20px; /* Adjust padding for size */
+    font-size: 16px; /* Adjust font size */
+    font-family: 'Roboto Slab', serif; /* Match heading font */
+    border-radius: 5px; /* Optional for rounded corners */
+    cursor: pointer; /* Changes cursor to pointer */
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    text-shadow: 0 0 20px red, 0 0 40px crimson, 0 0 60px crimson; /* Glow effect */
+    box-shadow: 0 0 20px red, 0 0 40px crimson, 0 0 60px crimson; /* Glow around button */
+    transform: scale(1.1); /* Slightly enlarges on hover */
+    box-shadow: 0 0 30px red, 0 0 50px crimson, 0 0 70px crimson; /* Intensifies glow on hover */
 }
