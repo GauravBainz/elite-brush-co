@@ -10,4 +10,5 @@ body{
 .navbar {
     background-color: black;
     font-family: 'Roboto Slab', serif;
+    font-size: 10px;
 }
