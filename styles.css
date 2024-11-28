@@ -1,12 +1,13 @@
-body {
-    background-color: rgb(0, 0, 0);
-    color: white;
+body{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.company-name {
-    color: red;
+.header{
+    color: white;
 }
 
+.navbar {
+    background-color: black;
+    font-family: 'Roboto Slab', serif;
+}
