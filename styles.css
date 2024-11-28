@@ -1,6 +1,8 @@
-body{
+html, body{
     display: flex;
     flex-direction: column;
+    background-color: black;
+    color: white;
 }
 
 .header{
@@ -11,4 +13,34 @@ body{
     background-color: black;
     font-family: 'Roboto Slab', serif;
     font-size: 10px;
+}
+
+.navbar-bran.header{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand.header:hover {
+    color: crimson; /* Changes text color to crimson on hover */
+}
+
+.custom-heading {
+    background-color: black; /* Black background */
+    color: white;
+    font-family: 'Roboto Slab', serif; /* Roboto Slab font */
+    margin: 0; /* Remove default margin */
+    padding: 50px; /* Add some padding for spacing */
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(45deg, red, crimson);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 10px red, 0 0 20px crimson;
+}
+
+.custom-heading:hover {
+    transform: scale(1.0);
+    text-shadow: 0 0 20px red, 0 0 40px crimson, 0 0 60px crimson;
+
 }
