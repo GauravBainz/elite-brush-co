@@ -40,6 +40,12 @@ html, body{
     text-shadow: 0 0 20px white, 0 0 40px white, 0 0 60px white;
 }
 
+.text{
+    font-family: 'Roboto Slab', serif; /* Match heading font */
+    text-align: center;
+    padding-top: 30px;
+}
+
 
 .display-5 {
     padding: 0;
@@ -71,8 +77,14 @@ button:hover {
 
 
 .blockquote {
-    width: 70%;
+    width: 80%;
     margin: auto;
+}
+
+@media (max-width: 767px) {
+    .blockquote {
+        text-align: left; /* Left align on mobile */
+    }
 }
 
 .blockquote.custom-heading {
