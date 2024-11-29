@@ -39,13 +39,45 @@
             <h1 class="display-5 custom-heading">Elevate Your Space With Elite Precision</h1>
         
             <div class="quote-btn">
-                <a href="quote.html">
-                    <button type="button" class="btn btn-secondary btn-lg">Book Your Quote Today!</button>
-                </a>
+                <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#quoteModal">Book Your Quote Today!</button>
             </div>
         
         </div>
        
+        <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="quoteModalLabel">Request a Quote</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="quoteForm" action="https://formspree.io/f/movqkpnj" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Describe your project" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" form="quoteForm" class="btn btn-primary">Submit Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container">
             <h1 class="blockquote text">At Elite Brush Co, we take pride in doing quality work, caring for our customers, and bringing fresh color to every project. We believe in doing things right, being reliable, and making sure our customers are happy with every brushstroke.</h1>
@@ -132,7 +164,7 @@
         </div>
         
 
-
-
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
