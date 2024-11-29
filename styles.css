@@ -335,3 +335,22 @@ button[type="submit"]:hover {
     text-shadow: 0 0 20px red, 0 0 40px crimson;
     transform: scale(1.05);
 }
+
+
+.btn-close {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    color: white; /* White "X" */
+    font-size: 24px; /* Adjust size */
+    font-weight: bold;
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 0; /* Remove extra padding */
+    line-height: 1; /* Tighten vertical spacing */
+    width: auto; /* Auto width */
+    height: 0; /* Auto height */
+}
+
+.btn-close:hover {
+    color: crimson; /* Highlight on hover */
+}
+
