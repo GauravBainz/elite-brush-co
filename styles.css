@@ -355,3 +355,10 @@ button[type="submit"]:hover {
 }
 
 
+@media (max-width: 768px) {
+    .modal-dialog {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+}
