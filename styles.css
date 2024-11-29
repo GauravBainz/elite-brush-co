@@ -57,9 +57,9 @@ html {
     justify-content: center; /* Center content vertically */
 }
 
-
-
-
+.text-center {
+    font-family: 'Roboto Slab', serif; /* Match heading font */
+}
 
 
 .text {
