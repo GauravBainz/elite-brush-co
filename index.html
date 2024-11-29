@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EliteBrush Co.</title>
-    <link rel="stylesheet" href="styles.css">
  
      <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-     <!-- Custom Styles -->
-     <link rel="stylesheet" href="styles.css">
-     
-     <!-- Bootstrap JS Dependencies -->
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 
@@ -29,7 +31,7 @@
                 <img src="images/logo.png" alt="EliteBrush Co." style="height: auto; max-height: 43px;">
             </a>
              <div>
-                <a class="navbar-brand header" href="#">About</a>
+                <a class="navbar-brand header" href="#">Projects</a>
                 <a class="navbar-brand header" href="#">Contact</a>
             </div>
         </div>
@@ -42,6 +44,67 @@
             <button type="button" class="btn btn-secondary btn-lg">Book Your Quote Today!</button>
         </a>
     </div>
+
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Residential</h5>
+                        <p class="card-text">High-quality interior and exterior painting to transform and enhance your home.</p>
+                    </div>
+                    <!-- Carousel for Residential -->
+                    <div id="residentialCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/Before1.JPG " class="d-block w-100" alt="Before1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/After1.JPG" class="d-block w-100" alt="After1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Before2.JPG" class="d-block w-100" alt="Before2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/After2.JPG" class="d-block w-100" alt="After2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Before3.JPG" class="d-block w-100" alt="Before3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/After3.JPG" class="d-block w-100" alt="After3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Commercial</h5>
+                        <p class="card-text">Professional painting solutions to elevate and maintain your business spaces with precision and quality.</p>
+                    </div>
+                    <!-- Carousel for Commercial -->
+                    <div id="commercialCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/commercial-before1.JPG" class="d-block w-100" alt="Before1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/commercial-before2.JPG" class="d-block w-100" alt="Before2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
 
 </body>
 </html>
