@@ -8,6 +8,10 @@ html, body {
     height: 100%; /* Ensure full height */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     color: white;
 }
@@ -53,6 +57,11 @@ html, body {
     justify-content: center; /* Center content vertically */
 }
 
+
+
+
+
+
 .text {
     font-family: 'Roboto Slab', serif; /* Match heading font */
     text-align: center;
@@ -89,13 +98,31 @@ button:hover {
 }
 
 .blockquote {
-    width: 80%;
-    margin: auto;
+    background-color: #222;
+    border-left: 5px solid crimson; /* Elegant red border for a modern look */
+    padding: 20px 30px; /* Better padding for text readability */
+    margin: 40px 0; /* Adds space between other sections */
+    font-style: italic;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Center text for a clean layout */
 }
+
+.blockquote:hover {
+    transform: translateY(-10px); /* Hover effect with slight lift */
+}
+
+.blockquote h1 {
+    color: #fff; /* White text for better contrast */
+    font-weight: 700;
+}
+
 
 @media (max-width: 767px) {
     .blockquote {
-        text-align: left; /* Left align on mobile */
+        text-align: left;
+        padding: 15px 20px;
     }
 }
 
@@ -114,15 +141,15 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 100%; /* Ensure full width */
-    padding: 0; /* Remove default padding */
-    margin-top: 0; /* Remove extra margin-top */
+    padding: 30px 15px;
+    background-color: #111;
 }
 
 .row {
-    justify-content: center; /* Center the columns */
-    width: 100%; /* Ensure full width */
-    margin: 0; /* Remove default margins */
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Add space between cards */
+    margin-top: 40px;
 }
 
 .col-md-4 {
@@ -133,32 +160,57 @@ button:hover {
 }
 
 .card {
-    margin: 0 auto; /* Center the card */
+    width: 300px; /* Fixed width for consistency */
+    background-color: #333;
+    border-radius: 15px; /* Rounded corners for a sleek look */
+    overflow: hidden; /* To maintain rounded corners for images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out;
     color: white;
-    background-color: black;
-    font-family: 'Roboto Slab', serif; /* Match heading font */
+    font-family: 'Roboto Slab', serif;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: crimson;
 }
 
 .card-text {
-    text-align: left;
+    .card-text {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
 }
 
-.card-title {
-    text-decoration: underline;
-}
 
 .carousel-item img {
-    border: 1px solid white;
-    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded image corners */
 }
 
 .carousel-control-prev, 
 .carousel-control-next {
-    width: 30px;
-    height: 30px;
-    background-color: rgba(255, 255, 255, 0.3);
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -172,6 +224,6 @@ button:hover {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 15px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
