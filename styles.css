@@ -1,11 +1,14 @@
-html, body{
+html, body {
     display: flex;
     flex-direction: column;
     background-color: black;
     color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure full height */
 }
 
-.header{
+.header {
     color: white;
 }
 
@@ -13,9 +16,16 @@ html, body{
     background-color: black;
     font-family: 'Roboto Slab', serif;
     font-size: 10px;
+    z-index: 2; /* Keep navbar on top */
+    position: fixed; /* Fix navbar at the top */
+    width: 100%; /* Ensure navbar spans full width */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px; /* Add some padding for better spacing */
 }
 
-.navbar-bran.header{
+.navbar-brand.header {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -30,29 +40,33 @@ html, body{
     color: white;
     font-family: 'Roboto Slab', serif; /* Roboto Slab font */
     margin: 0; /* Remove default margin */
-    padding: 50px; /* Add some padding for spacing */
-    margin-bottom: 20px;
+    padding: 100px 50px 20px 50px; /* Adjust padding for better positioning */
     text-align: center;
     color: transparent;
     background-image: linear-gradient(45deg, white, lightgray);
     background-clip: text;
     -webkit-background-clip: text;
     text-shadow: 0 0 20px white, 0 0 40px white, 0 0 60px white;
+    height: calc(100vh - 80px); /* Adjust height to fit the viewport minus the navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
 }
 
-.text{
+.text {
     font-family: 'Roboto Slab', serif; /* Match heading font */
     text-align: center;
     padding-top: 30px;
 }
 
-
 .display-5 {
     padding: 0;
     margin-top: 30px;
 }
+
 .quote-btn {
     text-align: center;
+    margin-top: 0; /* Position the button closer to the heading */
 }
 
 .quote-btn button {
@@ -64,17 +78,14 @@ html, body{
     font-family: 'Roboto Slab', serif; /* Match heading font */
     border-radius: 5px; /* Optional for rounded corners */
     cursor: pointer; /* Changes cursor to pointer */
-    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
     text-shadow: 0 0 20px red, 0 0 40px crimson, 0 0 60px crimson; /* Glow effect */
-    box-shadow: 0 0 20px red, 0 0 40px crimson, 0 0 60px crimson; /* Glow around button */
-    transform: scale(1.1); /* Slightly enlarges on hover */
     box-shadow: 0 0 30px red, 0 0 50px crimson, 0 0 70px crimson; /* Intensifies glow on hover */
+    transform: scale(1.1); /* Slightly enlarges on hover */
 }
-
 
 .blockquote {
     width: 80%;
@@ -97,15 +108,14 @@ button:hover {
     padding-top: 20px; /* Add minimal top padding if needed */
 }
 
-
-
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 100%; /* Ensure full width */
-    padding: 0;/* Remove default padding */
+    padding: 0; /* Remove default padding */
+    margin-top: 0; /* Remove extra margin-top */
 }
 
 .row {
@@ -131,7 +141,8 @@ button:hover {
 .card-text {
     text-align: left;
 }
-.card-title{
+
+.card-title {
     text-decoration: underline;
 }
 
@@ -139,6 +150,7 @@ button:hover {
     border: 1px solid white;
     border-radius: 5px;
 }
+
 .carousel-control-prev, 
 .carousel-control-next {
     width: 30px;
