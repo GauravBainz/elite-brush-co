@@ -31,6 +31,7 @@ html, body{
     font-family: 'Roboto Slab', serif; /* Roboto Slab font */
     margin: 0; /* Remove default margin */
     padding: 50px; /* Add some padding for spacing */
+    margin-bottom: 20px;
     text-align: center;
     color: transparent;
     background-image: linear-gradient(45deg, white, lightgray);
@@ -39,6 +40,11 @@ html, body{
     text-shadow: 0 0 20px white, 0 0 40px white, 0 0 60px white;
 }
 
+
+.display-5 {
+    padding: 0;
+    margin-top: 30px;
+}
 .quote-btn {
     text-align: center;
 }
@@ -63,20 +69,84 @@ button:hover {
     box-shadow: 0 0 30px red, 0 0 50px crimson, 0 0 70px crimson; /* Intensifies glow on hover */
 }
 
-.card {
-    font-family: 'Roboto Slab', serif; /* Match heading font */
-    color: white;
+
+.blockquote {
+    width: 70%;
     margin: auto;
-    margin-top: 20%;
+}
+
+.blockquote.custom-heading {
+    margin-bottom: 5px !important; /* Force a smaller bottom margin */
+    padding-bottom: 0 !important; /* Remove any bottom padding */
+}
+
+#projects.display-5.custom-heading {
+    margin-top: 0 !important; /* Remove top margin */
+    padding-top: 20px; /* Add minimal top padding if needed */
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* Ensure full width */
+    padding: 0;/* Remove default padding */
+}
+
+.row {
+    justify-content: center; /* Center the columns */
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Remove default margins */
+}
+
+.col-md-4 {
+    display: flex;
+    justify-content: center; /* Center the card */
+    align-items: center;
+    padding: 0; /* Remove default padding */
+}
+
+.card {
+    margin: 0 auto; /* Center the card */
+    color: white;
+    background-color: black;
+    font-family: 'Roboto Slab', serif; /* Match heading font */
+}
+
+.card-text {
+    text-align: left;
+}
+.card-title{
+    text-decoration: underline;
+}
+
+.carousel-item img {
+    border: 1px solid white;
     border-radius: 5px;
-    background-color: transparent;
+}
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    top: 55%;
+    transform: translateY(-50%);
 }
 
-.card img{
-    border-radius: px;
-    border: 2px solid red;
+.carousel-control-prev {
+    left: 5px;
 }
 
-.card-body {
+.carousel-control-next {
+    right: 5px;
+}
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 15px;
+    height: 20px;
 }
