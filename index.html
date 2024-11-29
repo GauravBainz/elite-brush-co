@@ -52,28 +52,65 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <div class="form-container">
                         <form id="quoteForm" action="https://formspree.io/f/movqkpnj" method="POST">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="3" placeholder="Describe your project" required></textarea>
-                            </div>
+                                                    <!-- First and Last Name Row -->
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                                    </div>
+                                </div>
+
+                                <!-- Email Field -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                                </div>
+
+                                <!-- Phone Field -->
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                                </div>
+
+                                <!-- Work Location and Project Type Row -->
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="workLocation" class="form-label">Work Location</label>
+                                        <select class="form-select" id="workLocation" name="workLocation" required>
+                                            <option value="">Select</option>
+                                            <option value="Interior">Interior</option>
+                                            <option value="Exterior">Exterior</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="projectType" class="form-label">Project Type</label>
+                                        <select class="form-select" id="projectType" name="projectType" required>
+                                            <option value="">Select</option>
+                                            <option value="New Construction">New Construction</option>
+                                            <option value="Renovation">Renovation</option>
+                                            <option value="Repaint">Repaint</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Project Description Field -->
+                                <div class="mb-3">
+                                    <label for="projectDescription" class="form-label">Project Description</label>
+                                    <textarea class="form-control" id="projectDescription" name="projectDescription" rows="4" placeholder="Describe your project" required></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" form="quoteForm" class="btn btn-primary">Submit Request</button>
+                        </div>
                     </div>
                 </div>
             </div>
