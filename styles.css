@@ -67,6 +67,7 @@ html, body {
 .quote-btn {
     text-align: center;
     margin-top: 0; /* Position the button closer to the heading */
+    margin-bottom: 30px;
 }
 
 .quote-btn button {
