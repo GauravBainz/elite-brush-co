@@ -355,11 +355,48 @@ button[type="submit"]:hover {
 }
 
 
-@media (max-width: 768px) {
+/* Hide modal and full-screen feature on mobile */
+@media (max-width: 767px) {
+    #imageModal {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
     .modal-dialog {
         display: flex;
         align-items: center;
-        min-height: 100vh;
-        margin-top: 50%; /* Adjust this value as needed */
+        min-height: calc(100% - 50px); /* Adjusts the height for the modal */
+        margin: auto;
     }
+}
+
+.modal-content img {
+    max-width: 60%; /* Reduce size by 30% */
+    max-height: 60%; /* Reduce height by 30% */
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+}
+
+
+Copy.modal-content {
+    background-color: transparent !important;
+}
+
+.modal-body {
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: semi-transparent dark overlay */
+}
+
+#fullScreenCarousel .carousel-item img {
+    background: transparent;
+    object-fit: contain; /* Ensures the full image is visible */
+    max-height: 90vh; /* Limits height while maintaining aspect ratio */
+}
+
+#imageModal .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
 }

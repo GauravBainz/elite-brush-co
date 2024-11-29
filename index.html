@@ -319,17 +319,19 @@
 
         <script>
             // JavaScript to handle modal image and carousel switching with badges
-            const carouselImages = document.querySelectorAll('.carousel-image');
-            const fullScreenCarouselInner = document.querySelector('#fullScreenCarousel .carousel-inner');
-        
-        carouselImages.forEach((img, index) => {
-            img.addEventListener('click', () => {
+const carouselImages = document.querySelectorAll('.carousel-image');
+const fullScreenCarouselInner = document.querySelector('#fullScreenCarousel .carousel-inner');
+
+carouselImages.forEach((img, index) => {
+    img.addEventListener('click', () => {
+        // Check if the screen width is greater than 767px (desktop)
+        if (window.innerWidth > 767) {
             // Remove all carousel items
             fullScreenCarouselInner.innerHTML = '';
-            
+
             // Loop through all images in the current carousel
             const allImages = img.closest('.carousel').querySelectorAll('.carousel-item');
-            
+
             allImages.forEach((item) => {
                 const badgeText = item.querySelector('.badge').textContent;
                 const modalItem = document.createElement('div');
@@ -340,14 +342,18 @@
                 `;
                 fullScreenCarouselInner.appendChild(modalItem);
             });
+
+            // Set the first item as active
+            fullScreenCarouselInner.firstChild.classList.add('active');
+
+            // Open the modal
+            $('#imageModal').modal('show');
+
             
-        // Set the first item as active
-        fullScreenCarouselInner.firstChild.classList.add('active');
-        
-        // Open the modal
-        $('#imageModal').modal('show');
+        }
     });
 });
+
         </script>
         
 
