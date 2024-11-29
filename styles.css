@@ -280,7 +280,7 @@ button:hover {
 /* General Placeholder Styling */
 
 .modal-content {
-    background-color: black; /* Modal background black */
+    background-color: black !important;
     color: white; /* White text */
     border-radius: 8px; /* Round corners */
 }
