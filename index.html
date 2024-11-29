@@ -203,6 +203,202 @@
         </div>
         
 
+
+
+
+
+
+
+
+
+
+
+
+        //test
+        <div class="container">
+            <h1 class="blockquote text">At Elite Brush Co, we take pride in doing quality work, caring for our customers, and bringing fresh color to every project. We believe in doing things right, being reliable, and making sure our customers are happy with every brushstroke.</h1>
+        
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Full Interior Project -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Full Interior</h5>
+                            <p class="card-text">A beautiful transformation of interior spaces.</p>
+                        </div>
+                        <div id="residentialCarousel" class="carousel slide" data-ride="false" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img src="images/Sunny-Rental/before2.jpg" class="d-block w-100 carousel-image" alt="Before2">
+                                    <div class="badge before">Before</div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="images/Sunny-Rental/after2.jpg" class="d-block w-100 carousel-image" alt="After1">
+                                    <div class="badge after">After</div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Sunny-Rental/before1.jpg" class="d-block w-100 carousel-image" alt="Before1">
+                                    <div class="badge before">Before</div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Sunny-Rental/after1.jpg" class="d-block w-100 carousel-image" alt="After1">
+                                    <div class="badge after">After</div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Sunny-Rental/before3.jpg" class="d-block w-100 carousel-image" alt="Before1">
+                                    <div class="badge before">Before</div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Sunny-Rental/after3.jpg" class="d-block w-100 carousel-image" alt="After1">
+                                    <div class="badge after">After</div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#residentialCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#residentialCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Cobra Auto Styling -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Cobra Auto Styling</h5>
+                            <p class="card-text">Bringing a fresh look to automotive shop interiors.</p>
+                        </div>
+                        <div id="commercialCarousel" class="carousel slide" data-ride="false" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/Cobra-Auto/before1.jpg" class="d-block w-100 carousel-image" alt="Before1">
+                                    <div class="badge before">Before</div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Cobra-Auto/before2.jpg" class="d-block w-100 carousel-image" alt="Before2">
+                                    <div class="badge before">Before</div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#commercialCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#commercialCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal for full-screen image view -->
+        <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="fullScreenCarousel" class="carousel slide" data-ride="false" data-interval="false">
+                            <div class="carousel-inner">
+                                <!-- Full-screen image items with Before/After badges -->
+                            </div>
+                            <a class="carousel-control-prev" href="#fullScreenCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#fullScreenCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <script>
+            // JavaScript to handle modal image and carousel switching with badges
+            const carouselImages = document.querySelectorAll('.carousel-image');
+            const fullScreenCarouselInner = document.querySelector('#fullScreenCarousel .carousel-inner');
+        
+        carouselImages.forEach((img, index) => {
+            img.addEventListener('click', () => {
+            // Remove all carousel items
+            fullScreenCarouselInner.innerHTML = '';
+            
+            // Loop through all images in the current carousel
+            const allImages = img.closest('.carousel').querySelectorAll('.carousel-item');
+            
+            allImages.forEach((item) => {
+                const badgeText = item.querySelector('.badge').textContent;
+                const modalItem = document.createElement('div');
+                modalItem.classList.add('carousel-item');
+                modalItem.innerHTML = `
+                    <img src="${item.querySelector('img').src}" class="d-block w-100" alt="Modal Image">
+                    <div class="badge">${badgeText}</div>
+                `;
+                fullScreenCarouselInner.appendChild(modalItem);
+            });
+            
+        // Set the first item as active
+        fullScreenCarouselInner.firstChild.classList.add('active');
+        
+        // Open the modal
+        $('#imageModal').modal('show');
+    });
+});
+        </script>
+        
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
