@@ -304,6 +304,7 @@ button:hover {
     background-color: #444; /* Dark input fields */
     color: white; /* White text */
     border: 1px solid #555; /* Light border for contrast */
+    caret-color: white; /* Ensures cursor matches text color */
 }
 
 
@@ -313,6 +314,7 @@ button:hover {
     background-color: #555; /* Lighter on focus */
     border-color: #777; /* Light border color on focus */
     box-shadow: 0 0 8px rgba(255, 0, 0, 0.7); /* Red shadow on focus */
+    color: white;
 }
 
 
