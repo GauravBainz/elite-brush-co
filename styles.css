@@ -372,8 +372,8 @@ button[type="submit"]:hover {
 }
 
 .modal-content img {
-    max-width: 60%; /* Reduce size by 30% */
-    max-height: 60%; /* Reduce height by 30% */
+    max-width: 70%; /* Reduce size by 30% */
+    max-height: 70%; /* Reduce height by 30% */
     margin: auto;
     display: block;
     margin-top: 5%;
