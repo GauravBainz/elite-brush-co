@@ -142,7 +142,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     padding: 30px 15px;
-    background-color: #111;
+    background-color: transparent;
 }
 
 .row {
@@ -161,7 +161,7 @@ button:hover {
 
 .card {
     width: 300px; /* Fixed width for consistency */
-    background-color: #44424294;
+    background-color: transparent;
     border-radius: 15px; /* Rounded corners for a sleek look */
     overflow: hidden; /* To maintain rounded corners for images */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
