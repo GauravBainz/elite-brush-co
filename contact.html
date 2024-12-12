@@ -39,6 +39,18 @@
         a:hover {
             color: crimson; /* Crimson color on hover */
         }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links img {
+            width: 30px; /* Reduced from 50px to 30px */
+            height: 30px; /* Added to maintain aspect ratio */
+            object-fit: contain; /* Ensures the image fits within the dimensions */
+            transition: transform 0.3s ease;
+        }
+        .social-links img:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
     <body>
@@ -58,6 +70,18 @@
                 <p><span>Email:</span> <a href="mailto:elitebrushco@gmail.com">elitebrushco@gmail.com</a></p>
                 <p><span>Gaurav:</span> <a href="tel:+12506405402">(250) 640-5402</a></p>
                 <p><span>Kavan:</span> <a href="tel:+17782810166">(778) 281-0166</a></p>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/elitebrushco/" target="_blank">
+                        <img src="images/logos/instagram-logo.jpg" alt="Instagram" title="Follow us on Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61568642015108" target="_blank">
+                        <img src="images/logos/facebook-logo.jpg" alt="Facebook" title="Follow us on Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@elitebrushco" target="_blank">
+                        <img src="images/logos/tiktok-logo.jpg" alt="Tiktok" title="Follow us on Instagram">
+                    </a>
+                </div>
             </div>
         </div>
         
