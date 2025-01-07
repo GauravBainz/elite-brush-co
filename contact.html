@@ -21,20 +21,37 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <style>
+        
         .contact-info {
-            margin: 30vh 0;
+            margin: 20vh 0; /* Reduced from 30vh to 2vh to move everything up */
             text-align: center;
             font-family: 'Roboto Slab', serif;
         }
-        .contact-info p {
-            font-size: 1.2rem;
+        .contact-info h2 {
+            font-size: 2.5rem; /* Make the Contact header bigger */
+            font-weight: bold;
+            margin-bottom: 1.5rem;
         }
         .contact-info span {
             font-weight: bold;
         }
+
+
+        .co-owners-title {
+            font-size: 2.0rem; /* Bigger font for Co-Owners text */
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+        }
+
         a {
             color: inherit; /* Inherit color from parent */
             text-decoration: none; /* Remove underline */
+            font-weight: 500; /* Added slightly more weight to links */
+            transition: color 0.2s ease;
         }
         a:hover {
             color: crimson; /* Crimson color on hover */
@@ -43,14 +60,47 @@
             margin-top: 20px;
         }
         .social-links img {
-            width: 30px; /* Reduced from 50px to 30px */
-            height: 30px; /* Added to maintain aspect ratio */
-            object-fit: contain; /* Ensures the image fits within the dimensions */
+            width: 40px; /* Increased from 30px */
+            height: 40px; /* Increased from 30px */
+            object-fit: contain;
             transition: transform 0.3s ease;
+            margin: 0px; /* Added space between social icons */
         }
         .social-links img:hover {
             transform: scale(1.1);
         }
+
+        .owner-headshots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px; /* Space between the two images */
+            max-width: 800px; /* Limit maximum width of container */
+            margin: 0 auto; /* Center the container */
+            margin-bottom: 2rem;
+        }
+
+        .owner {
+            text-align: center;
+            flex: 1; /* Allow each owner div to take equal space */
+            max-width: 300px; /* Maximum width for each owner section */
+        }
+
+        .owner img {
+            width: 100%; /* Make image fill its container */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover;
+            border: 1px solid #ddd;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 2%;
+        }
+
+        .owner p {
+            margin-top: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        
     </style>
 </head>
     <body>
@@ -66,11 +116,23 @@
         <div class="container">
             <div class="contact-info">
                 <h2>Contact</h2>
-                <p><span>Co-Owners:</span> Gaurav Bains & Kavan Varaich</p>
-                <p><span>Email:</span> <a href="mailto:elitebrushco@gmail.com">elitebrushco@gmail.com</a></p>
-                <p><span>Gaurav:</span> <a href="tel:+12506405402">(250) 640-5402</a></p>
-                <p><span>Kavan:</span> <a href="tel:+17782810166">(778) 281-0166</a></p>
+                <p class="co-owners-title">Co-Owners</p>
 
+                <div class="owner-headshots d-flex justify-content-center align-items-center mb-3">
+                    <div class="owner">
+                        <img src="images/headshots/DSC_0024.jpeg" alt="Gaurav Bains" title="Gaurav Bains" class="img-fluid">
+                        <p class="mt-2"><span>Gaurav Singh Bains</span></p>
+                        <p><a href="tel:+12506405402">(250) 640-5402</a></p>
+                    </div>
+                    <div class="owner">
+                        <img src="images/headshots/DSC_0021.jpeg" alt="Kavan Varaich" title="Kavan Varaich" class="img-fluid">
+                        <p class="mt-2"><span>Kavan Singh Varaich</span></p>
+                        <p><a href="tel:+17782810166">(778) 281-0166</a></p>
+                    </div>
+                </div>
+
+
+                <p><span>Email:</span> <a href="mailto:elitebrushco@gmail.com">elitebrushco@gmail.com</a></p>
                 <div class="social-links">
                     <a href="https://www.instagram.com/elitebrushco/" target="_blank">
                         <img src="images/logos/instagram-logo.jpg" alt="Instagram" title="Follow us on Instagram">
