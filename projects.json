@@ -1,0 +1,114 @@
+{
+    "projects": [
+      
+      {
+        "id": "stunning-room",  
+        "title": "Room Transformation",  
+        "description": "Designed and painted the room elegantly",  
+        "imagePairs": [
+          {
+            "before": "images/gaurav-room/beforeWashroomWall.jpeg",
+            "after": "images/gaurav-room/afterWashroomWall.jpeg"     
+          },
+          {
+           "before": "images/gaurav-room/beforeReadingCorner.jpeg",
+            "after": "images/gaurav-room/afterReadingCorner.jpeg"
+          },
+          {
+            "before": "images/gaurav-room/beforeEntrance.jpeg",
+             "after": "images/gaurav-room/afterEntrance.jpeg"
+          },
+          {
+            "before": "images/gaurav-room/beforeCloset.jpeg",
+             "after": "images/gaurav-room/afterCloset.jpeg"
+          },
+          {
+            "before": "images/gaurav-room/beforeBedWall.jpeg",
+             "after": "images/gaurav-room/afterBackwall.jpeg"
+          }
+         
+        ]
+      },
+      {
+        "id": "office-makeover",  
+        "title": "Office Transformation",  
+        "description": "Transformed with a touch of EliteBrush Co magic",  
+        "imagePairs": [
+          {
+            "before": "images/gaurav-office/fullroom-before.jpeg",
+            "after": "images/gaurav-office/fullroom-after.jpeg"     
+          },
+          {
+           "before": "images/gaurav-office/corner-before.jpeg",
+            "after": "images/gaurav-office/corner-after.jpeg"
+          },
+          {
+            "before": "images/gaurav-office/closet-before.jpeg",
+             "after": "images/gaurav-office/closet-after.jpeg"
+          }
+         
+        ]
+      },
+      {
+        "id": "Sunny-project1",  
+        "title": "Full Interior",  
+        "description": "A beautiful transformation of interior spaces",  
+        "imagePairs": [
+          {
+            "before": "images/Sunny-Rental/before2.jpg",
+            "after": "images/Sunny-Rental/after2.jpg"     
+          },
+          {
+           "before": "images/Sunny-Rental/before1.jpg",
+            "after": "images/Sunny-Rental/after1.jpg"
+          },
+          {
+            "before": "images/Sunny-Rental/before3.jpg",
+             "after": "images/Sunny-Rental/after3.jpg"
+           }
+         
+        ]
+      },
+      {
+        "id": "Cobra-auto",  
+        "title": "Cobra Auto",  
+        "description": "Bringing a fresh look to automotive shop interiors",  
+        "imagePairs": [
+          {
+            "before": "images/Cobra-Auto/before3.jpg",
+            "after": "images/Cobra-Auto/after3.jpg"     
+          },
+          {
+           "before": "images/Cobra-Auto/before1.jpg",
+            "after": "images/Cobra-Auto/after2.jpg"
+          },
+          {
+            "before": "images/Cobra-Auto/before4.jpg",
+             "after": "images/Cobra-Auto/after4.jpg"
+           }
+         
+        ]
+      },
+      {
+        "id": "Sunny-project2",  
+        "title": "Basement Refresh",  
+        "description": "Making damaged walls look brand new again",  
+        "imagePairs": [
+          {
+            "before": "images/Sunny-Basement/Frontdoor-before.jpeg",
+            "after": "images/Sunny-Basement/Frontdoor-after.jpeg"     
+          },
+          {
+           "before": "images/Sunny-Basement/hallway-before.jpeg",
+            "after": "images/Sunny-Basement/hallway-after.jpeg"
+          },
+          {
+            "before": "images/Sunny-Basement/mainwall-before.jpeg",
+             "after": "images/Sunny-Basement/mainwall-after.jpeg"
+           }
+         
+        ]
+      }
+
+    ]
+  }

@@ -169,31 +169,40 @@ button:hover {
     color: white;
     font-family: 'Roboto Slab', serif;
 }
+@media (min-width: 768px) {
+    .card {
+        width: 500px; /* Desktop width */
+    }
+}
+
+
 
 .card:hover {
     transform: translateY(-10px); /* Lift effect on hover */
 }
 
 .card-body {
-    padding: 20px;
+    
+    padding-bottom: 5px;
 }
 
 
 .card-title {
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     text-align: center;
     color: crimson;
 }
 
 .card-text {
-    .card-text {
-        text-align: center;
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
+    text-align: center;
+    font-size: 1rem;
+    margin: auto;
+    padding-top: 10px;
+    font-style: italic;
+    font-weight: 700;
     
 }
 
@@ -400,3 +409,4 @@ Copy.modal-content {
     left: 10px;
     z-index: 10;
 }
+
