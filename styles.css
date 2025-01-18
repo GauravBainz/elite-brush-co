@@ -362,7 +362,7 @@ button[type="submit"]:hover {
 .btn-close:hover {
     color: crimson; /* Highlight on hover */
 }
-
+ 
 
 /* Hide modal and full-screen feature on mobile */
 @media (max-width: 767px) {
