@@ -1,6 +1,45 @@
 {
     "projects": [
-      
+      {
+        "id": "Sunny-project1",  
+        "title": "Full Interior",  
+        "description": "A beautiful transformation of interior spaces",  
+        "imagePairs": [
+          {
+            "before": "images/Sunny-Rental/before2.jpg",
+            "after": "images/Sunny-Rental/after2.jpg"     
+          },
+          {
+           "before": "images/Sunny-Rental/before1.jpg",
+            "after": "images/Sunny-Rental/after1.jpg"
+          },
+          {
+            "before": "images/Sunny-Rental/before3.jpg",
+             "after": "images/Sunny-Rental/after3.jpg"
+           }
+         
+        ]
+      },
+      {
+        "id": "office-makeover",  
+        "title": "Office Transformation",  
+        "description": "Transformed with a touch of Elite magic",  
+        "imagePairs": [
+          {
+            "before": "images/gaurav-office/fullroom-before.jpeg",
+            "after": "images/gaurav-office/fullroom-after.jpeg"     
+          },
+          {
+           "before": "images/gaurav-office/corner-before.jpeg",
+            "after": "images/gaurav-office/corner-after.jpeg"
+          },
+          {
+            "before": "images/gaurav-office/closet-before.jpeg",
+             "after": "images/gaurav-office/closet-after.jpeg"
+          }
+         
+        ]
+      },
       {
         "id": "stunning-room",  
         "title": "Room Transformation",  
@@ -30,49 +69,9 @@
         ]
       },
       {
-        "id": "office-makeover",  
-        "title": "Office Transformation",  
-        "description": "Transformed with a touch of EliteBrush Co magic",  
-        "imagePairs": [
-          {
-            "before": "images/gaurav-office/fullroom-before.jpeg",
-            "after": "images/gaurav-office/fullroom-after.jpeg"     
-          },
-          {
-           "before": "images/gaurav-office/corner-before.jpeg",
-            "after": "images/gaurav-office/corner-after.jpeg"
-          },
-          {
-            "before": "images/gaurav-office/closet-before.jpeg",
-             "after": "images/gaurav-office/closet-after.jpeg"
-          }
-         
-        ]
-      },
-      {
-        "id": "Sunny-project1",  
-        "title": "Full Interior",  
-        "description": "A beautiful transformation of interior spaces",  
-        "imagePairs": [
-          {
-            "before": "images/Sunny-Rental/before2.jpg",
-            "after": "images/Sunny-Rental/after2.jpg"     
-          },
-          {
-           "before": "images/Sunny-Rental/before1.jpg",
-            "after": "images/Sunny-Rental/after1.jpg"
-          },
-          {
-            "before": "images/Sunny-Rental/before3.jpg",
-             "after": "images/Sunny-Rental/after3.jpg"
-           }
-         
-        ]
-      },
-      {
         "id": "Cobra-auto",  
         "title": "Cobra Auto",  
-        "description": "Bringing a fresh look to automotive shop interiors",  
+        "description": "Freshening automotive shop interiors",  
         "imagePairs": [
           {
             "before": "images/Cobra-Auto/before3.jpg",
