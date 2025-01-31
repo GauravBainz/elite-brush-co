@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             `;
             
-            projectsContainer.insertAdjacentHTML('beforeend', projectHTML);
+            projectsContainer.insertAdjacentHTML('beforeend', projectHTML); 
         });
 
         // Updated modal handler to ensure proper image sizing
