@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <div class="card-body">
                             <h5 class="card-title">${project.title}</h5>
                         </div>
-                        <div id="carousel-${project.id}" class="carousel slide" data-ride="false" data-interval="false">
+                        <div id="carousel-${project.id}" class="carousel carousel-fade slide" data-ride="false" data-interval="false">
                             <div class="carousel-inner">
                                 ${project.imagePairs.map((pair, pairIndex) => `
                                     <div class="carousel-item ${pairIndex === 0 ? 'active' : ''}">
