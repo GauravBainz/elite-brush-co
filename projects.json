@@ -1,6 +1,30 @@
 {
     "projects": [
       {
+        "id": "Sunny-project3",  
+        "title": "Whiteout",  
+        "description": "All white. All fresh. All new.",  
+        "imagePairs": [
+          {
+            "before": "images/Sunny-rental-hart/IMG_8162.jpeg",
+            "after": "images/Sunny-rental-hart/IMG_8297.jpeg"     
+          },
+          {
+            "before": "images/Sunny-rental-hart/IMG_8183.jpeg",
+            "after": "images/Sunny-rental-hart/IMG_8298.jpeg"     
+          },
+          {
+            "before": "images/Sunny-rental-hart/IMG_8170.jpeg",
+            "after": "images/Sunny-rental-hart/IMG_8301.jpeg"     
+          },
+          {
+            "before": "images/Sunny-rental-hart/IMG_8173.jpeg",
+            "after": "images/Sunny-rental-hart/IMG_8292.jpeg"     
+          }
+         
+        ]
+      },
+      {
         "id": "Sunny-project1",  
         "title": "Full Interior",  
         "description": "A beautiful transformation of interior spaces",  
@@ -27,7 +51,7 @@
         "imagePairs": [
           {
             "before": "images/gaurav-office/fullroom-before.jpeg",
-            "after": "images/gaurav-office/fullroom-after.jpeg"     
+            "after": "images/gaurav-office/IMG_8068.jpeg"     
           },
           {
            "before": "images/gaurav-office/corner-before.jpeg",
@@ -35,7 +59,7 @@
           },
           {
             "before": "images/gaurav-office/closet-before.jpeg",
-             "after": "images/gaurav-office/closet-after.jpeg"
+             "after": "images/gaurav-office/IMG_8071.jpeg"
           }
          
         ]
@@ -106,6 +130,17 @@
              "after": "images/Sunny-Basement/mainwall-after.jpeg"
            }
          
+        ]
+      },
+      {
+        "id": "Bonnie-project1",  
+        "title": "Neutralized",  
+        "description": "Bold green into warm brown",  
+        "imagePairs": [
+          {
+            "before": "images/bonnie-project/IMG_8219.jpeg",
+            "after": "images/bonnie-project/IMG_8226.jpeg"     
+          }
         ]
       }
 
