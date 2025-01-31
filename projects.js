@@ -67,7 +67,7 @@ function initializeFullScreenHandlers() {
                         <img src="${item.querySelector('img').src}" 
                              class="d-block w-100" 
                              alt="Modal Image"
-                             style="max-width: 90%; max-height: 90vh; margin: auto; display: block; object-fit: contain;">
+                             style="max-width: 90vw; max-height: 90vh; margin: auto; object-fit: contain; top: 50%; left: 50%;">
                         <div class="badge">${badgeText}</div>
                     `;
                     fullScreenCarouselInner.appendChild(modalItem);
