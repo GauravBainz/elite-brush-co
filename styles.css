@@ -282,8 +282,144 @@ button:hover {
   .after {
     background-color: rgba(0, 0, 0, 0.7); /* Dark background for 'After' */
   }
+/* MODAL QUOTE styling */
 
+/* General Placeholder Styling */
+#quoteModal .modal-backdrop.show {
+    opacity: 0.85;
+    background-color: #000;
+}
 
+#quoteModal .modal-content {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(220, 20, 60, 0.2);
+}
+
+#quoteModal .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+}
+
+#quoteModal .modal-title {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Quote Modal Close Button */
+#quoteModal .btn-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+#quoteModal .btn-close:hover {
+    color: crimson;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Quote Modal Body */
+#quoteModal .modal-body {
+    padding: 1.5rem;
+    background-color: transparent;
+}
+
+/* Form Elements */
+#quoteModal .form-label {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+#quoteModal .form-control, 
+#quoteModal .form-select {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+#quoteModal .form-control:focus, 
+#quoteModal .form-select:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: crimson;
+    box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.25);
+    color: white;
+}
+
+#quoteModal .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Select Dropdown */
+#quoteModal .form-select {
+    background-size: 16px 12px;
+}
+
+#quoteModal .form-select option {
+    background-color: #000;
+    color: white;
+}
+
+/* Character Warning */
+#quoteModal #charWarning {
+    color: crimson !important;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+/* Submit Button */
+#quoteModal button[type="submit"] {
+    background: linear-gradient(45deg, #dc143c, #ff0000);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    width: auto;
+    min-width: 200px;
+}
+
+#quoteModal button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(220, 20, 60, 0.4);
+}
+
+#quoteModal button[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+/* Row Spacing */
+#quoteModal .row.mb-3 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #quoteModal .modal-content {
+        margin: 1rem;
+    }
+    
+    #quoteModal button[type="submit"] {
+        width: 100%;
+    }
+}
 
 
 
