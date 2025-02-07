@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                             <div class="carousel-inner">
                                 ${project.imagePairs.map((pair, pairIndex) => `
                                     <div class="carousel-item ${pairIndex === 0 ? 'active' : ''}">
-                                        <img src="${pair.before}" class="d-block w-100 carousel-image" alt="Before" style="border-radius: 10px;">
+                                        <img src="${pair.before}" class="d-block w-100 carousel-image" alt="Before" style="border-radius: 2px;">
                                         <div class="badge before">Before</div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="${pair.after}" class="d-block w-100 carousel-image" alt="After" style="border-radius: 10px;">
+                                        <img src="${pair.after}" class="d-block w-100 carousel-image" alt="After" style="border-radius: 2px;">
                                         <div class="badge after">After</div>
                                     </div>
                                 `).join('')}
